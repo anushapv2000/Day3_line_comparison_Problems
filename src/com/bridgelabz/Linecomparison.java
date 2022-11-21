@@ -23,10 +23,13 @@ public class Linecomparison {
 
         if(String.valueOf(len2).equals(String.valueOf(len1)))
         {
-            System.out.println("Equal");
+            System.out.println("Two lines are equal");
+        } else if (len2>len1) {
+            System.out.println("Line 2 is greater than Line1");
         }
         else {
-            System.out.println("Not equal");
+            System.out.println("Line 1 is greater than line2");
         }
+
     }
 }
