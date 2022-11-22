@@ -20,10 +20,11 @@ public class Linecomparison {
         double len2=Math.sqrt(Math.pow((x22-x21),2)+Math.pow((y22-y21),2));
         System.out.println("len of line 2 is "+len2 );
         System.out.println("len of line 1 is "+len1 );
-
-        if(String.valueOf(len2).equals(String.valueOf(len1)))
+        Double dlen1=len1;
+        Double dlen2=len2;
+        if(dlen1.equals(dlen2))
         {
-            System.out.println("Equal");
+            System.out.println("Two lines are equal");
         }
         else {
             System.out.println("Not equal");
