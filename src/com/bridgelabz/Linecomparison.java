@@ -20,15 +20,16 @@ public class Linecomparison {
         double len2=Math.sqrt(Math.pow((x22-x21),2)+Math.pow((y22-y21),2));
         System.out.println("len of line 2 is "+len2 );
         System.out.println("len of line 1 is "+len1 );
-
-        if(String.valueOf(len2).equals(String.valueOf(len1)))
+        Double dlen1=len1;
+        Double dlen2=len2;
+        if(dlen1.equals(dlen2))
         {
             System.out.println("Two lines are equal");
-        } else if (len2>len1) {
-            System.out.println("Line 2 is greater than Line1");
+        } else if (dlen1.compareTo(dlen2)>0) {
+            System.out.println("Line 1 is greater than Line2");
         }
         else {
-            System.out.println("Line 1 is greater than line2");
+            System.out.println("Line 2 is greater than line1");
         }
 
     }
